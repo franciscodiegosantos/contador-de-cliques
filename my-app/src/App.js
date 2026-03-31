@@ -1,6 +1,5 @@
 import logo from './logo.svg';
 import './App.css';
-import './button.css';
 import Contador from "./Contador";
 
 function App() {

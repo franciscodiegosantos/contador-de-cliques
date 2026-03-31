@@ -1,70 +1,109 @@
-# Getting Started with Create React App
+# 📊 Projeto Contador de Cliques
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este é um projeto simples desenvolvido com **React** que demonstra o uso de componentes funcionais e do hook `useState` para gerenciar estado.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Funcionalidade
 
-### `npm start`
+O projeto consiste em um contador de cliques que:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* Exibe o número atual de cliques na tela
+* Incrementa o valor toda vez que o botão é pressionado
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🧩 Estrutura do Projeto
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+O projeto é composto pelos seguintes arquivos principais:
 
-### `npm run build`
+```
+src/
+├── App.js
+├── Contador.js
+├── index.js
+├── App.css
+├── index.css
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 💡 Como funciona
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 📌 Componente `Contador`
 
-### `npm run eject`
+* Utiliza o hook `useState` para armazenar o valor do contador
+* O estado inicial é `0`
+* A função `incrementarContador` atualiza o estado somando +1 a cada clique
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```jsx
+const [count, setCount] = useState(0);
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## ▶️ Como executar o projeto
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 1. Instalar dependências
 
-## Learn More
+```bash
+npm install
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 2. Rodar o projeto
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+npm start
+```
 
-### Code Splitting
+O projeto será iniciado em:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```
+http://localhost:3000
+```
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🛠️ Tecnologias utilizadas
 
-### Making a Progressive Web App
+* React
+* JavaScript (ES6+)
+* HTML5
+* CSS3
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## 📷 Interface
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+A aplicação possui uma interface simples com:
 
-### Deployment
+* Um título do projeto
+* Um contador exibido na tela
+* Um botão para incrementar o contador
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## 📈 Possíveis melhorias
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* Adicionar botão de decremento
+* Criar botão de reset
+* Estilizar melhor a interface
+* Salvar valor do contador no Local Storage
+* Adicionar animações
+
+---
+
+## 📚 Aprendizados
+
+Com este projeto, é possível praticar:
+
+* Criação de componentes funcionais
+* Uso do `useState`
+* Manipulação de eventos (`onClick`)
+* Estrutura básica de um projeto React
+
+---
+
+## 👨‍💻 Autor
+
+Desenvolvido para fins de estudo e prática com React.
